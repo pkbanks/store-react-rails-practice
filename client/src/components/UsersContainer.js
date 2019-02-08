@@ -12,7 +12,6 @@ class UsersContainer extends Component {
   componentDidMount() {
     axios.get('/api/v1/users.json')
     .then(response => {
-      console.log(response)
       this.setState({
         users: response.data
       })
